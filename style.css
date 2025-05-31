@@ -1,0 +1,79 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background: #fff;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+nav a {
+  text-decoration: none;
+  color: #f15bb5;
+  font-weight: bold;
+}
+header {
+  background: url('img/photo1.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 1rem;
+}
+.btn {
+  background: #f15bb5;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.about-img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+.about-text {
+  flex: 1;
+}
+.gallery img {
+  width: 100px;
+  margin: 0.5rem;
+}
+.countdown {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.map-container {
+  padding: 2rem;
+}
+footer {
+  background: #ffe4ec;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

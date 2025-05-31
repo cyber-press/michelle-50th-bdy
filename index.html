@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michelle's Birthday Bash</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff9f7;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #fff;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e91e63;
+      font-weight: 600;
+    }
+    nav a:hover { color: #c2185b; }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=1500&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+    header p {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 0.3rem 0.8rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover { background: #c2185b; }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    .guest-list {
+      background: #ffe5ec;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fce4ec;
+      font-size: 0.9rem;
+    }
+    .about-flex {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .about-flex img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#guestlist">Guest List</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Welcome to Michelle Ervin's Birthday Celebration in Jamaica</h1>
+    <p>July 23–27, 2026 | Hideaway at Royalton Blue Waters</p>
+    <a class="btn" href="#rsvp">RSVP Now</a>
+  </header>
+  <section id="about" class="about-flex">
+    <div style="flex: 1; min-width: 250px; text-align: center;">
+      <img src="assets/celebrant.jpg" alt="Michelle Ervin" />
+    </div>
+    <div style="flex: 2; min-width: 280px;">
+      <h2>About the Celebration</h2>
+      <p>This celebration marks a new milestone in Michelle’s life, celebrated in paradise—Montego Bay, Jamaica!
+      Come dressed in elegant white and ready to make memories. We’re gathering for an unforgettable birthday bash
+      at the luxurious Hideaway at Royalton Blue Waters.</p>
+    </div>
+  </section>
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Initial" required>
+      <textarea placeholder="Leave a message (optional)"></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+  <section id="guestlist">
+    <h2>Guest List</h2>
+    <div class="guest-list">
+      <!-- Guest list entries will appear here -->
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For questions, reach out to Shirley at <a href="tel:+12107796564">+1-210-779-6564</a></p>
+  </section>
+  <footer>
+    &copy; 2026 Michelle's Birthday Bash | Site by Press
+  </footer>
+</body>
+</html>
